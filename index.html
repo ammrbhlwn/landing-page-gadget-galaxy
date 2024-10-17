@@ -1,93 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Create a Portfolio Gallery using HTML and CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Anterin</title>
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div class="title"><h1>GeeksforGeeks</h1></div>
-    <div class="container">
-      <h3>A Computer Science Portal for Geeks</h3>
-      <hr />
+    <!-- navbar -->
+    <header class="navigation">
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#features">Fitur</a></li>
+          <li><a href="#pricing">Harga</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <h2>Portfolio</h2>
-      <div class="row">
-        <div class="column">
-          <div class="content">
-            <img
-              src="https://www.geeksforgeeks.org/wp-content/uploads/html.png"
-              alt=""
-              style="width: 100%"
-            />
-            <h3>
-              <a href="#">HTML Tutorials</a>
-            </h3>
-            <p>
-              HTML stands for Hyper Text Markup Language. It is used to design
-              web pages using markup language. HTML is the combination of
-              Hypertext and Markup language. Hypertext defines the link between
-              the web pages.
-            </p>
+    <main>
+      <section class="jumbotron">
+        <div class="content">
+          <div class="copywriting">
+            <h1>Mau bikin website impianmu?</h1>
+            <h3>Join kursus interaktif kami!</h3>
+            <p>Daftar sekarang dan dapatkan pengalaman belajar bersama ahli</p>
+          </div>
+          <div class="btn">
+            <a href="#" class="btnBelajar">Belajar Sekarang</a>
+            <a href="#" class="btnTutorial">Tutorial</a>
           </div>
         </div>
 
-        <div class="column">
-          <div class="content">
-            <img
-              src="https://www.geeksforgeeks.org/wp-content/uploads/CSS.png"
-              alt=""
-              style="width: 100%"
-            />
-            <h3>
-              <a href="#">CSS Tutorials</a>
-            </h3>
-            <p>
-              Cascading Style Sheets, fondly referred to as CSS, is a simply
-              designed language intended to simplify the process of making web
-              pages presentable. CSS allows you to apply styles to web pages.
-            </p>
-          </div>
+        <div class="card">
+          <section class="course">
+            <h3>HTML</h3>
+            <img src="./img/html.png" alt="HTML" />
+          </section>
+          <section class="course">
+            <h3>CSS</h3>
+            <img src="./img/css.png" alt="CSS" />
+          </section>
+          <section class="course">
+            <h3>PHP</h3>
+            <img src="./img/php.png" alt="PHP" />
+          </section>
+          <section class="course">
+            <h3>Javascript</h3>
+            <img src="./img/js.png" alt="Javascript" />
+          </section>
         </div>
-
-        <div class="column">
-          <div class="content">
-            <img
-              src="https://www.geeksforgeeks.org/wp-content/uploads/php-1.png"
-              alt=""
-              style="width: 100%"
-            />
-            <h3>
-              <a href="#">PHP Tutorials</a>
-            </h3>
-
-            <p>
-              The term PHP is an acronym for PHP: Hypertext Preprocessor. PHP is
-              a server-side scripting language designed specifically for web
-              development. PHP can be easily embedded in HTML files.
-            </p>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="content">
-            <img
-              src="https://www.geeksforgeeks.org/wp-content/uploads/javascript.png"
-              alt=""
-              style="width: 100%"
-            />
-            <h3>
-              <a href="#">JavaScript Tutorials</a>
-            </h3>
-            <p>
-              Javascript was developed by Brendan Eich in 1995. At first, it was
-              called LiveScript but was later name to JavaScript. JavaScript is
-              the muscle of the structure
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
