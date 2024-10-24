@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page Anterin</title>
+    <title>Gadget Galaxy</title>
     <link rel="stylesheet" href="./style.css" />
 
     <!-- font roboto -->
@@ -28,47 +28,143 @@
     <header class="navigation">
       <nav class="navbar">
         <ul class="nav-list">
-          <li><a href="#beranda">Beranda</a></li>
-          <li><a href="#about">Tentang</a></li>
-          <li><a href="#features">Fitur</a></li>
-          <li><a href="#pricing">Harga</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product">Produk</a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#footer">Hubungi Kami</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="jumbotron">
+      <section id="home" class="jumbotron">
         <div class="content">
           <div class="copywriting">
-            <h1>Mau bikin website impianmu?</h1>
-            <h3>Join kursus interaktif kami!</h3>
-            <p>Daftar sekarang dan dapatkan pengalaman belajar bersama ahli</p>
+            <h1>
+              Jelajahi koleksi terbaru smartphone, laptop, dan produk smart
+              home!
+            </h1>
+            <p>
+              Nikmati potongan harga hingga 40% untuk semua produk elektronik!
+            </p>
           </div>
-          <div class="btn">
-            <a href="#" class="btnBelajar">Belajar Sekarang</a>
-            <a href="#" class="btnTutorial">Tutorial</a>
-          </div>
+          <a href="#" class="btn">Belanja Sekarang</a>
         </div>
+        <img src="/img/product-1.png" alt="" />
+      </section>
 
-        <div class="card">
-          <section class="course">
-            <h3>HTML</h3>
-            <img src="./img/html.png" alt="HTML" />
-          </section>
-          <section class="course">
-            <h3>CSS</h3>
-            <img src="./img/css.png" alt="CSS" />
-          </section>
-          <section class="course">
-            <h3>PHP</h3>
-            <img src="./img/php.png" alt="PHP" />
-          </section>
-          <section class="course">
-            <h3>Javascript</h3>
-            <img src="./img/js.png" alt="Javascript" />
-          </section>
+      <section id="product" class="product">
+        <div class="image">
+          <img src="/img/product-2.png" alt="" />
+        </div>
+        <div class="desc">
+          <div class="benefit">
+            <div class="value">Kebersihan Optimal</div>
+            <div class="value">Harga Terjangkau</div>
+            <div class="value">Hemat Waktu & Tenaga</div>
+          </div>
+          <div class="detail">
+            <h2>Nikmati kebersihan maksimal tanpa repot!</h2>
+            <p>
+              Satu alat, beragam manfaat! Vacuum cleaner kami membuat
+              membersihkan rumah jadi lebih cepat dan efisien!
+            </p>
+            <a href="#" class="button">Beli Sekarang</a>
+          </div>
         </div>
       </section>
+
+      <section class="form-container">
+        <h2>Daftar Menjadi Member Sekarang!</h2>
+        <form class="registerForm">
+          <div class="input">
+            <label>First Name<span style="color: red">*</span></label>
+            <input name="firstName" type="text" required />
+          </div>
+
+          <div class="input">
+            <label>Last Name<span style="color: red">*</span></label>
+            <input name="lastName" type="text" required />
+          </div>
+
+          <div class="input">
+            <label>Gender<span style="color: red">*</span></label>
+            <div class="gender">
+              <label class="radio">
+                <input type="radio" name="gender" value="male" required />
+                Male
+              </label>
+              <label class="radio">
+                <input type="radio" name="gender" value="female" required />
+                Female
+              </label>
+            </div>
+          </div>
+
+          <div class="input">
+            <label>Phone<span style="color: red">*</span></label>
+            <input
+              name="phone"
+              type="text"
+              placeholder="62xxxxxxxxx"
+              required
+            />
+          </div>
+
+          <div class="input">
+            <label>Address<span style="color: red">*</span></label>
+            <textarea name="address" required></textarea>
+          </div>
+
+          <div class="input">
+            <label>Email<span style="color: red">*</span></label>
+            <input
+              name="email"
+              type="email"
+              placeholder="xxxxxxxx@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="input">
+            <label>Password<span style="color: red">*</span></label>
+            <input
+              name="password"
+              type="password"
+              placeholder="**********"
+              required
+            />
+          </div>
+
+          <div class="input">
+            <label>Re-type Password<span style="color: red">*</span></label>
+            <input
+              name="confirmPassword"
+              type="password"
+              placeholder="**********"
+              required
+            />
+          </div>
+
+          <button type="submit" class="button-submit">
+            <b>Submit</b>
+          </button>
+        </form>
+      </section>
     </main>
+
+    <footer id="footer">
+      <div class="info">
+        <h4>Gadget Galaxy</h4>
+        <p>Alamat: Jl. Keputih, Surabaya, Indonesia</p>
+        <p>Telp: +62812345678</p>
+        <p>Email: <a href="#">gadgetgalaxy@gmail.com</a></p>
+      </div>
+      <section class="bottom">
+        <p>Copyright &#169; 2024 Gadget Galaxy</p>
+      </section>
+    </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
