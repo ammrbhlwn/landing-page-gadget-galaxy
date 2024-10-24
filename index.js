@@ -61,45 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.target.validity.valueMissing) {
       event.target.setCustomValidity("Wajib diisi.");
     } else if (!event.target.value.match(/^62[0-9]{9,}$/)) {
-      event.target.setCustomValidity(
-        "Hanya angka yang diizinkan dan dimulai dari 62"
-      );
-    }
-  }
-
-  const passwordInput = form.querySelector('input[name="password"]');
-  passwordInput.addEventListener(
-    "invalid",
-    passwordHandler.bind(passwordInput)
-  );
-
-  function passwordHandler(event) {
-    event.target.setCustomValidity("");
-
-    if (event.target.validity.valueMissing) {
-      event.target.setCustomValidity("Wajib diisi.");
-    } else if (!event.target.value.match(/(?=.*[a-zA-Z])(?=.*[0-9]).{8,}/)) {
-      event.target.setCustomValidity(
-        "Hanya angka yang diizinkan dan dimulai dari 62"
-      );
-    }
-  }
-
-  const verPasswordInput = form.querySelector('input[name="confirmPassword"]');
-  verPasswordInput.addEventListener(
-    "invalid",
-    verPasswordHandler.bind(verPasswordInput)
-  );
-
-  function verPasswordHandler(event) {
-    event.target.setCustomValidity("");
-
-    if (event.target.validity.valueMissing) {
-      event.target.setCustomValidity("Wajib diisi.");
-    } else if (!event.target.value.match(/^62[0-9]{9,}$/)) {
-      event.target.setCustomValidity(
-        "Hanya angka yang diizinkan dan dimulai dari 62"
-      );
+      event.target.setCustomValidity("Hanya memiliki format @");
     }
   }
 });
